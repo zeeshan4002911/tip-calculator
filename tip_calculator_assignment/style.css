@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+:root {
+    --dark-color: hsl(183, 100%, 15%);
+    --cyan-light: hsl(185, 41%, 84%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--cyan-light);
+    font-family: 'Space Mono', monospace;
+}
+
+#main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10vh;
+}
+
+h1 {
+    color: var(--dark-color);
+}
+
+#box-container {
+    background-color: #fff;
+    padding: 1rem;
+    max-width: 60vw;
+    border-radius: 12.5px;
+}
+
+.right-section {
+    float: right;
+    width: 50%;
+    height: 40vh;
+    background-color: var(--dark-color);
+    padding: 1rem;
+    color: white;
+    border-radius: 4px;
+    position: relative;
+}
+.left-section {
+    float: left;
+    width: 50%;
+    padding: 1rem;
+}
+
+.left-section label {
+    display: block;
+}
+
+button, #custom {
+    background-color: var(--dark-color);
+    color: white;
+    padding: .5rem 2rem;
+    margin: .25rem;
+    border: none;
+    border-radius: 5px
+}
+#custom {
+    background-color: var(--cyan-light);
+    color: #777;
+    width: 8vw;
+}
+
+.right-section>button {
+    display: block;
+    width: 100%;
+}
+
+#reset {
+    border: 1px solid white;
+    position: absolute;
+    bottom: .3rem;
+    width: 90%;
+}
+
+input::placeholder {
+    text-align: right;
+}
